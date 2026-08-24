@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      /* 1. 버튼 요소에 마우스 오버 시 (hover) */
+      button:hover {
+        background-color: orange;
+      }
+      /* 2. 입력 요소에 포커스 시 (focus) */
+      input:focus {
+        border: 2px solid blue;
+        color: red;
+        /* outline을 제거해야 border 속성이 input 태그에 적용 */
+        outline-width: none;
+      }
+      /* 3. 리스트의 첫 번째 항목만 선택 (first-child) */
+      .item-list li:first-child {
+        background-color: aqua;
+      }
+      /* 4. 리스트의 마지막 항목 (last-child) */
+      .item-list li:last-child {
+        background-color: yellow;
+      }
+      /* 5. 리스트의 홀수(odd) / 짝수(even) / n(숫자) 사용 가능 */
+      .item-list li:nth-child(odd) {
+        font-size: 20px;
+        font-weight: bold;
+      }
+      .item-list li:nth-child(even) {
+        color: burlywood;
+        font-weight: bold;
+      }
+      .item-list li:nth-child(3) {
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <button>버튼을 눌러보세요</button>
+    <input type="text" placeholder="여기에 입력" />
+
+    <ul class="item-list">
+      <li>항목 1</li>
+      <li>항목 2</li>
+      <li>항목 3</li>
+      <li>항목 4</li>
+      <li>항목 5</li>
+    </ul>
+  </body>
+</html>
