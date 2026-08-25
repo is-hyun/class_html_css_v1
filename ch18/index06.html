@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: flex;
+        border: 2px solid green;
+        padding: 10px;
+        /* flex-wrap: wrap; */
+      }
+
+      .item {
+        width: 150px;
+        height: 100px;
+        background-color: rgb(52, 141, 66);
+        margin: 5px;
+        border: 2px solid rgb(48, 25, 42);
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+      }
+
+      .item1 {
+        /* flex 단축 속성 */
+        /* flex : 0 1 0; (기본값) */
+        flex: 1 1 0;
+      }
+      .item2 {
+        /* flex-grow : 1 / flex-shrink : 1 / flex-basis : 0 */
+        flex: 1;
+      }
+      .item3 {
+        flex: 2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item item1">1</div>
+      <div class="item item2">2</div>
+      <div class="item item3">3</div>
+      <div class="item item3">3</div>
+      <div class="item item3">3</div>
+      <div class="item item3">3</div>
+    </div>
+  </body>
+</html>
