@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      body {
+        background-color: #eee;
+        color: #333;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+
+      /*헤더*/
+      header {
+        background-color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 80px;
+      }
+      .logo {
+        font-size: 24px;
+        font-weight: bold;
+        color: #1d2783;
+      }
+      .logo span {
+        color: #00bcd4;
+      }
+
+      .nav-menu {
+        list-style: none;
+        gap: 30px;
+
+        display: flex;
+      }
+      .nav-menu a {
+        text-decoration: none;
+        color: #444;
+        font-weight: 500;
+        font-size: 16px;
+      }
+
+      /* hero */
+      .hero {
+        /* 배경에 그라데이션 넣기 */
+        background: linear-gradient(135deg, #1a247f 0%, #3543a4 100%);
+        color: #fff;
+        text-align: center;
+        padding: 100px 20px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .hero h1 {
+        font-size: 42px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        letter-spacing: 1px;
+      }
+      .hero p {
+        font-size: 18px;
+        font-weight: 300;
+        opacity: 0.9;
+      }
+
+      /* feature */
+      .features {
+        max-width: 1000px;
+        padding: 80px 20px;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 20px;
+      }
+
+      .card {
+        background-color: #fff;
+        flex: 1;
+        padding: 40px 30px;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s;
+      }
+      .card:hover {
+        transform: translateY(-15px);
+        cursor: pointer;
+      }
+      .card-icon {
+        font-size: 40px;
+        margin-bottom: 30px;
+      }
+      .card h3 {
+        font-size: 20px;
+        color: #2c3998;
+        margin-bottom: 15px;
+        font-weight: bold;
+      }
+      .card p {
+        font-size: 15px;
+        color: #666;
+        word-break: keep-all;
+      }
+
+      /* 푸터 */
+      footer {
+        margin-top: auto;
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 50px 20px;
+        font-size: 16px;
+        letter-spacing: 1px;
+        opacity: 0.8;
+      }
+
+      /* 반응형 */
+      @media (max-width: 768px) {
+        header {
+          padding: 20px;
+        }
+        .features {
+          flex-direction: column;
+        }
+        .hero h1 {
+          font-size: 30px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">BRAND<span>LOGO</span></div>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="#">소개</a></li>
+          <li><a href="#">서비스</a></li>
+          <li><a href="#">문의하기</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h1>더 나은 미래를 만드는 혁신</h1>
+        <p>우리는 가장 단순한 방법으로 최고의 가치를 전달합니다</p>
+      </section>
+
+      <section class="features">
+        <div class="card">
+          <div class="card-icon">🚀</div>
+          <h3>빠른 속도</h3>
+          <p>최신 기술을 활용하여 가장 빠른 퍼포먼스를 보장합니다.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">💎</div>
+          <h3>높은 품질</h3>
+          <p>정교한 코드와 디자인으로 최상의 결과물을 제공합니다.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🤝</div>
+          <h3>고객 신뢰</h3>
+          <p>언제나 고객의 목소리에 귀 기울이며 함꼐 성장합니다.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy;2026 Brand Design. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
